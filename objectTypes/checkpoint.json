@@ -1,0 +1,56 @@
+{
+	"name": "Checkpoint",
+	"plugin-id": "Sprite",
+	"sid": 459176071218535,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "modo",
+			"type": "string",
+			"desc": "",
+			"sid": 280328102853042
+		},
+		{
+			"name": "Area",
+			"type": "number",
+			"desc": "",
+			"sid": 382845165639392
+		},
+		{
+			"name": "checkpoint",
+			"type": "number",
+			"desc": "",
+			"sid": 818982453871902
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 1,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 54,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 409962410675287,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

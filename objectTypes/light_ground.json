@@ -1,0 +1,27 @@
+{
+	"name": "light_ground",
+	"plugin-id": "Tilemap",
+	"sid": 533551668408280,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 504021505794720
+		}
+	],
+	"effectTypes": [],
+	"image": {
+		"width": 128,
+		"height": 128,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "png",
+		"exportQuality": 0.8,
+		"imageSpriteId": 50,
+		"useCollisionPoly": true
+	},
+	"tile-collision-polys": {}
+}

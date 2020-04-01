@@ -1,0 +1,27 @@
+{
+	"name": "black_ground",
+	"plugin-id": "Tilemap",
+	"sid": 119703939073642,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 161970882409703
+		}
+	],
+	"effectTypes": [],
+	"image": {
+		"width": 176,
+		"height": 80,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "png",
+		"exportQuality": 0.8,
+		"imageSpriteId": 42,
+		"useCollisionPoly": true
+	},
+	"tile-collision-polys": {}
+}

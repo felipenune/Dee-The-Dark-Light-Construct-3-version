@@ -1,0 +1,38 @@
+{
+	"name": "eCamera",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Player",
+					"sid": 558869365354854,
+					"parameters": {
+						"object": "camera_zone"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-x",
+					"objectClass": "camera_player",
+					"sid": 912243019501983,
+					"parameters": {
+						"x": "lerp(camera_player.X,camera_zone.X,0.05)"
+					}
+				},
+				{
+					"id": "set-y",
+					"objectClass": "camera_player",
+					"sid": 523345973108366,
+					"parameters": {
+						"y": "lerp(camera_player.Y,camera_zone.Y,0.05)"
+					}
+				}
+			],
+			"sid": 491159827647898
+		}
+	],
+	"sid": 491356646140685
+}

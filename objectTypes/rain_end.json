@@ -1,0 +1,20 @@
+{
+	"name": "rain_end",
+	"plugin-id": "Particles",
+	"sid": 638803849515098,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 6,
+		"height": 6,
+		"originX": 0,
+		"originY": 2.6666666666666665,
+		"originalSource": "",
+		"exportFormat": "png",
+		"exportQuality": 0.8,
+		"imageSpriteId": 8,
+		"useCollisionPoly": true
+	}
+}

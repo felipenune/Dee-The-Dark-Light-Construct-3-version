@@ -1,0 +1,44 @@
+{
+	"name": "camera_zone",
+	"plugin-id": "Sprite",
+	"sid": 759849066725195,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "level",
+			"type": "number",
+			"desc": "",
+			"sid": 660641488840919
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 15,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 977270721630890,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

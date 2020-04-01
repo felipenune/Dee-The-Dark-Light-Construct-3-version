@@ -1,0 +1,49 @@
+{
+	"name": "dark_traps",
+	"plugin-id": "Tilemap",
+	"sid": 494609929658771,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 32,
+		"height": 32,
+		"originX": 0.25,
+		"originY": 0.25,
+		"originalSource": "",
+		"exportFormat": "png",
+		"exportQuality": 0.8,
+		"imageSpriteId": 48,
+		"collisionPoly": {
+			"points": [
+				0,
+				0,
+				0.5,
+				0,
+				0.5,
+				0.5,
+				0,
+				0.5
+			]
+		},
+		"useCollisionPoly": true
+	},
+	"tile-collision-polys": {
+		"0": {
+			"collisionPoly": {
+				"points": [
+					0.4999999999999996,
+					0,
+					0.6535326086956523,
+					0.29483695652173886,
+					1,
+					1,
+					0,
+					1
+				]
+			},
+			"useCollisionPoly": true
+		}
+	}
+}

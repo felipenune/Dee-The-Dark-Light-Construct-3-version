@@ -1,0 +1,378 @@
+{
+	"name": "eSave&Load",
+	"events": [
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "New Game",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-clicked",
+							"objectClass": "NewGame",
+							"sid": 902159953963299
+						}
+					],
+					"actions": [
+						{
+							"id": "request-project-file",
+							"objectClass": "AJAX",
+							"sid": 263042685476111,
+							"parameters": {
+								"tag": "\"load\"",
+								"file": "save.json"
+							}
+						}
+					],
+					"sid": 148072615319878
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-completed",
+							"objectClass": "AJAX",
+							"sid": 566990320416278,
+							"parameters": {
+								"tag": "\"load\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "load",
+							"objectClass": "save",
+							"sid": 971416045632682,
+							"parameters": {
+								"json": "AJAX.LastData"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 332277786922264,
+							"parameters": {
+								"variable": "cur_area",
+								"value": "save.Get(\"cur_area\")"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 493236686339910,
+							"parameters": {
+								"variable": "cur_checkpoint",
+								"value": "save.Get(\"cur_level\")"
+							}
+						},
+						{
+							"id": "go-to-layout-by-name",
+							"objectClass": "System",
+							"sid": 118048691854630,
+							"parameters": {
+								"layout": "\"Area_\"&save.Get(\"last_area\")"
+							}
+						}
+					],
+					"sid": 980481424926619
+				}
+			],
+			"sid": 438871281600450,
+			"text-color": [
+				0,
+				0,
+				0,
+				0
+			],
+			"background-color": [
+				0.13725490196078433,
+				0.3254901960784314,
+				0.8196078431372549,
+				1
+			]
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Load Game",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-clicked",
+							"objectClass": "Load",
+							"sid": 362832893799583
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 695552423424821,
+							"parameters": {
+								"layout": "Load"
+							}
+						}
+					],
+					"sid": 954046364944663
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 449384100117580,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "Slot1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "flash",
+							"objectClass": "Slot1",
+							"sid": 497254749264410,
+							"behaviorType": "Flash",
+							"parameters": {
+								"on-time": "0.1",
+								"off-time": "0.1",
+								"duration": "1.0"
+							}
+						},
+						{
+							"id": "get-item",
+							"objectClass": "LocalStorage",
+							"sid": 738721370449624,
+							"parameters": {
+								"key": "\"save_dic\""
+							}
+						}
+					],
+					"sid": 551201871337620
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-item-get",
+							"objectClass": "LocalStorage",
+							"sid": 141665500620303,
+							"parameters": {
+								"key": "\"save_dic\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "load",
+							"objectClass": "save",
+							"sid": 966165755633630,
+							"parameters": {
+								"json": "LocalStorage.ItemValue"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 803666287605543,
+							"parameters": {
+								"variable": "cur_area",
+								"value": "save.Get(\"cur_area\")"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 273337629269141,
+							"parameters": {
+								"variable": "cur_checkpoint",
+								"value": "save.Get(\"cur_level\")"
+							}
+						},
+						{
+							"id": "go-to-layout-by-name",
+							"objectClass": "System",
+							"sid": 687845382520251,
+							"parameters": {
+								"layout": "\"Area_\"&save.Get(\"last_area\")"
+							}
+						}
+					],
+					"sid": 596472454818808
+				}
+			],
+			"sid": 605207313639675,
+			"text-color": [
+				0,
+				0,
+				0,
+				0
+			],
+			"background-color": [
+				0.13725490196078433,
+				0.3254901960784314,
+				0.8196078431372549,
+				1
+			]
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Save",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 720033825809543,
+							"parameters": {
+								"key": 83
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-item",
+							"objectClass": "LocalStorage",
+							"sid": 967312284167302,
+							"parameters": {
+								"key": "\"save_dic\"",
+								"value": "save.AsJSON"
+							}
+						}
+					],
+					"sid": 692642070828456
+				}
+			],
+			"sid": 424977981101464,
+			"text-color": [
+				0,
+				0,
+				0,
+				0
+			],
+			"background-color": [
+				0.13725490196078433,
+				0.3254901960784314,
+				0.8196078431372549,
+				1
+			]
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Checkpoint",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Player",
+							"sid": 223940004327368,
+							"parameters": {
+								"object": "Checkpoint"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Player",
+							"sid": 251424892841096,
+							"parameters": {
+								"instance-variable": "checkpoint_x",
+								"value": "Checkpoint.X"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Player",
+							"sid": 271165732946804,
+							"parameters": {
+								"instance-variable": "checkpoint_y",
+								"value": "Checkpoint.Y"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Player",
+							"sid": 704311775124530,
+							"parameters": {
+								"instance-variable": "estado_checkpoint",
+								"value": "Checkpoint.modo"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 639419422563755,
+							"parameters": {
+								"variable": "cur_area",
+								"value": "Checkpoint.Area"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 409809714783983,
+							"parameters": {
+								"variable": "cur_checkpoint",
+								"value": "Checkpoint.checkpoint"
+							}
+						},
+						{
+							"id": "set-key",
+							"objectClass": "save",
+							"sid": 444808309977395,
+							"parameters": {
+								"key": "\"cur_area\"",
+								"value": "cur_area"
+							}
+						},
+						{
+							"id": "set-key",
+							"objectClass": "save",
+							"sid": 449383327053847,
+							"parameters": {
+								"key": "\"cur_level\"",
+								"value": "cur_checkpoint"
+							}
+						}
+					],
+					"sid": 174286625657693
+				}
+			],
+			"sid": 699412864049535,
+			"text-color": [
+				0,
+				0,
+				0,
+				0
+			],
+			"background-color": [
+				0.13725490196078433,
+				0.3254901960784314,
+				0.8196078431372549,
+				1
+			]
+		}
+	],
+	"sid": 225191207059083
+}

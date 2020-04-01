@@ -1,0 +1,20 @@
+{
+	"name": "Ashs3",
+	"plugin-id": "Particles",
+	"sid": 254957526899109,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 199,
+		"height": 199,
+		"originX": 0.4824120603015075,
+		"originY": 0.5025125628140703,
+		"originalSource": "",
+		"exportFormat": "png",
+		"exportQuality": 0.8,
+		"imageSpriteId": 40,
+		"useCollisionPoly": true
+	}
+}

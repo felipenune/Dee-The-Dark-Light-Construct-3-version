@@ -1,0 +1,245 @@
+{
+	"name": "eMisc",
+	"events": [
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Blood Rain",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 656119984300255,
+							"parameters": {
+								"interval-seconds": "0.01"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 958820927993011,
+							"parameters": {
+								"object-to-create": "BloodDrop",
+								"layer": "\"Game\"",
+								"x": "random(-2,640)",
+								"y": "-16"
+							}
+						}
+					],
+					"sid": 149296437676743
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-created",
+							"objectClass": "BloodDrop",
+							"sid": 118478520333015
+						}
+					],
+					"actions": [
+						{
+							"id": "set-angle-of-motion",
+							"objectClass": "BloodDrop",
+							"sid": 811055822163179,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"angle": "100"
+							}
+						},
+						{
+							"id": "set-angle",
+							"objectClass": "BloodDrop",
+							"sid": 277160313800565,
+							"disabled": true,
+							"parameters": {
+								"angle": "180"
+							}
+						}
+					],
+					"sid": 796721655137241
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "BloodDrop",
+							"sid": 727503188807171,
+							"parameters": {
+								"object": "black_ground"
+							}
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Player",
+							"sid": 858789502387014,
+							"parameters": {
+								"instance-variable": "estado_forma",
+								"comparison": 0,
+								"value": "\"Fisico\""
+							}
+						},
+						{
+							"id": "for-each",
+							"objectClass": "System",
+							"sid": 308380137924741,
+							"parameters": {
+								"object": "BloodDrop"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "spawn-another-object",
+							"objectClass": "BloodDrop",
+							"sid": 716723803406894,
+							"parameters": {
+								"object": "rain_end",
+								"layer": "\"Game\"",
+								"image-point": "1"
+							}
+						},
+						{
+							"id": "set-angle",
+							"objectClass": "rain_end",
+							"sid": 903199773943220,
+							"parameters": {
+								"angle": "270"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "BloodDrop",
+							"sid": 248119587560701
+						}
+					],
+					"sid": 999359002111411
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "Player",
+							"sid": 184988704849842,
+							"parameters": {
+								"instance-variable": "estado_forma",
+								"comparison": 0,
+								"value": "\"Alma\""
+							}
+						},
+						{
+							"id": "for-each",
+							"objectClass": "System",
+							"sid": 994606327079885,
+							"parameters": {
+								"object": "BloodDrop"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "spawn-another-object",
+							"objectClass": "BloodDrop",
+							"sid": 533533785056509,
+							"parameters": {
+								"object": "rain_end",
+								"layer": "\"Game\"",
+								"image-point": "1"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "BloodDrop",
+							"sid": 622225364417966
+						}
+					],
+					"sid": 563020669589351
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-y",
+							"objectClass": "BloodDrop",
+							"sid": 117036745268002,
+							"parameters": {
+								"comparison": 4,
+								"y-co-ordinate": "LayoutHeight"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "BloodDrop",
+							"sid": 422631534462004
+						}
+					],
+					"sid": 398562564658246
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "BloodDrop",
+							"sid": 105380758561528,
+							"parameters": {
+								"object": "Player_Anim"
+							}
+						},
+						{
+							"id": "for-each",
+							"objectClass": "System",
+							"sid": 196694086895145,
+							"parameters": {
+								"object": "BloodDrop"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "spawn-another-object",
+							"objectClass": "BloodDrop",
+							"sid": 216413284229094,
+							"parameters": {
+								"object": "rain_end",
+								"layer": "\"Game\"",
+								"image-point": "1"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "BloodDrop",
+							"sid": 895929181150993
+						}
+					],
+					"sid": 602361782484592
+				}
+			],
+			"sid": 942335957960154,
+			"text-color": [
+				0,
+				0,
+				0,
+				0
+			],
+			"background-color": [
+				0.13725490196078433,
+				0.3254901960784314,
+				0.8196078431372549,
+				1
+			]
+		}
+	],
+	"sid": 520797430345273
+}

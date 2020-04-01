@@ -1,0 +1,48 @@
+{
+	"name": "Ripple_Effect",
+	"plugin-id": "Sprite",
+	"sid": 669244395883701,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Tween",
+			"name": "Tween",
+			"sid": 887608169040802
+		}
+	],
+	"effectTypes": [
+		{
+			"effectId": "warpobjectmask",
+			"name": "WarpObjectMask"
+		}
+	],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 0,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 377236764335529,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -1,0 +1,26 @@
+{
+	"name": "eMain",
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "ePlayer"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "eMisc"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "eDebug"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "eCamera"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "eSave&Load"
+		}
+	],
+	"sid": 511506745259763
+}

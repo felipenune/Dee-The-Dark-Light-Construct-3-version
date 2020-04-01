@@ -1,0 +1,125 @@
+{
+	"name": "Player",
+	"plugin-id": "Sprite",
+	"sid": 861203026549480,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "estado_forma",
+			"type": "string",
+			"desc": "",
+			"sid": 433249576200474
+		},
+		{
+			"name": "estado_animações",
+			"type": "string",
+			"desc": "",
+			"sid": 928920985074060
+		},
+		{
+			"name": "dash_time",
+			"type": "number",
+			"desc": "",
+			"sid": 368800352160808
+		},
+		{
+			"name": "canDash",
+			"type": "boolean",
+			"desc": "",
+			"sid": 693481644948649
+		},
+		{
+			"name": "wall_jump_right",
+			"type": "boolean",
+			"desc": "",
+			"sid": 351650934026183
+		},
+		{
+			"name": "wall_jump_left",
+			"type": "boolean",
+			"desc": "",
+			"sid": 587123665220576
+		},
+		{
+			"name": "wall_jump_time",
+			"type": "number",
+			"desc": "",
+			"sid": 412431575271873
+		},
+		{
+			"name": "checkpoint_x",
+			"type": "number",
+			"desc": "",
+			"sid": 509684046590514
+		},
+		{
+			"name": "checkpoint_y",
+			"type": "number",
+			"desc": "",
+			"sid": 814200006192247
+		},
+		{
+			"name": "estado_checkpoint",
+			"type": "string",
+			"desc": "",
+			"sid": 106320200240986
+		},
+		{
+			"name": "shadow",
+			"type": "boolean",
+			"desc": "",
+			"sid": 483701279218457
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Platform",
+			"name": "Platform",
+			"sid": 303081818928142
+		},
+		{
+			"behaviorId": "scrollto",
+			"name": "ScrollTo",
+			"sid": 276091138393331
+		},
+		{
+			"behaviorId": "EightDir",
+			"name": "8Direction",
+			"sid": 608270899951298
+		},
+		{
+			"behaviorId": "Platform",
+			"name": "PlatformDash",
+			"sid": 900148854357760
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 1,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 957701306809016,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

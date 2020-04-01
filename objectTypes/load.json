@@ -1,0 +1,21 @@
+{
+	"name": "Load",
+	"plugin-id": "Button",
+	"sid": 144842967666069,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "selected",
+			"type": "boolean",
+			"desc": "",
+			"sid": 973647297780330
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Tween",
+			"name": "Tween",
+			"sid": 982030538774056
+		}
+	]
+}

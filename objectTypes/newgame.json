@@ -1,0 +1,15 @@
+{
+	"name": "NewGame",
+	"plugin-id": "Button",
+	"sid": 555680511360070,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "selected",
+			"type": "boolean",
+			"desc": "",
+			"sid": 968185903009309
+		}
+	],
+	"behaviorTypes": []
+}

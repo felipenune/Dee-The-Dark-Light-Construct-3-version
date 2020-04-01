@@ -1,0 +1,472 @@
+{
+	"projectFormatVersion": 1,
+	"savedWithRelease": 18902,
+	"name": "Dee and the dark light",
+	"runtime": "c3",
+	"useWorker": false,
+	"bundleAddons": false,
+	"usedAddons": [
+		{
+			"type": "plugin",
+			"id": "Sprite",
+			"name": "Sprite",
+			"author": "Scirra",
+			"version": "r189.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "AJAX",
+			"name": "AJAX",
+			"author": "Scirra",
+			"version": "r189.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "LocalStorage",
+			"name": "Local storage",
+			"author": "Scirra",
+			"version": "r189.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Particles",
+			"name": "Particles",
+			"author": "Scirra",
+			"version": "r189.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Tilemap",
+			"name": "Tilemap",
+			"author": "Scirra",
+			"version": "r189.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Text",
+			"name": "Text",
+			"author": "Scirra",
+			"version": "r189.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Button",
+			"name": "Button",
+			"author": "Scirra",
+			"version": "r189.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Dictionary",
+			"name": "Dictionary",
+			"author": "Scirra",
+			"version": "r189.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "gamepad",
+			"name": "Gamepad",
+			"author": "Scirra",
+			"version": "r189.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Keyboard",
+			"name": "Keyboard",
+			"author": "Scirra",
+			"version": "r189.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Mouse",
+			"name": "Mouse",
+			"author": "Scirra",
+			"version": "r189.2",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Platform",
+			"name": "Platform",
+			"author": "Scirra",
+			"version": "r189.2",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "scrollto",
+			"name": "Scroll To",
+			"author": "Scirra",
+			"version": "r189.2",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "EightDir",
+			"name": "8 Direction",
+			"author": "Scirra",
+			"version": "r189.2",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Fade",
+			"name": "Fade",
+			"author": "Scirra",
+			"version": "r189.2",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Orbit",
+			"name": "Orbit",
+			"author": "Scirra",
+			"version": "r189.2",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Bullet",
+			"name": "Bullet",
+			"author": "Scirra",
+			"version": "r189.2",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Tween",
+			"name": "Tween",
+			"author": "Scirra",
+			"version": "r189.2",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "solid",
+			"name": "Solid",
+			"author": "Scirra",
+			"version": "r189.2",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "MoveTo",
+			"name": "Move To",
+			"author": "Scirra",
+			"version": "r189.2",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Flash",
+			"name": "Flash",
+			"author": "Scirra",
+			"version": "r189.2",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "warpobjectmask",
+			"name": "Warp object mask",
+			"author": "Scirra",
+			"version": "r189.2",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "water",
+			"name": "Water",
+			"author": "Viktor Korsun",
+			"version": "r189.2",
+			"bundled": false
+		}
+	],
+	"uniqueId": "ggt990r15v4",
+	"objectTypes": {
+		"items": [
+			"Soul"
+		],
+		"subfolders": [
+			{
+				"items": [
+					"Player",
+					"Player_Anim",
+					"Player_Shadow"
+				],
+				"subfolders": [],
+				"name": "Player"
+			},
+			{
+				"items": [
+					"AJAX",
+					"LocalStorage"
+				],
+				"subfolders": [],
+				"name": "System"
+			},
+			{
+				"items": [
+					"BALL",
+					"BloodDrop",
+					"Ashs1",
+					"Ashs2",
+					"Ashs3",
+					"rain_end",
+					"Ripple_Effect"
+				],
+				"subfolders": [],
+				"name": "Misc"
+			},
+			{
+				"items": [
+					"black_ground",
+					"Text",
+					"water",
+					"water2",
+					"light_ground"
+				],
+				"subfolders": [],
+				"name": "Cenário"
+			},
+			{
+				"items": [
+					"camera_zone",
+					"camera_player"
+				],
+				"subfolders": [],
+				"name": "Camera"
+			},
+			{
+				"items": [
+					"change_layout",
+					"Checkpoint"
+				],
+				"subfolders": [],
+				"name": "Positions"
+			},
+			{
+				"items": [
+					"dark_traps",
+					"Destroyer",
+					"white_traps"
+				],
+				"subfolders": [],
+				"name": "Traps and Obstacles"
+			},
+			{
+				"items": [
+					"Load",
+					"NewGame",
+					"Slot1"
+				],
+				"subfolders": [],
+				"name": "Buttons"
+			},
+			{
+				"items": [
+					"save"
+				],
+				"subfolders": [],
+				"name": "Dictionarys"
+			},
+			{
+				"items": [
+					"Gamepad",
+					"Keyboard",
+					"Mouse"
+				],
+				"subfolders": [],
+				"name": "Inputs"
+			}
+		]
+	},
+	"autosaveData": null,
+	"containers": [],
+	"families": {
+		"items": [],
+		"subfolders": []
+	},
+	"layouts": {
+		"items": [],
+		"subfolders": [
+			{
+				"items": [
+					"level_testes",
+					"level_testes2",
+					"Bank"
+				],
+				"subfolders": [],
+				"name": "Testes & Bank"
+			},
+			{
+				"items": [
+					"Title Screen",
+					"Load"
+				],
+				"subfolders": [],
+				"name": "Title Screen"
+			},
+			{
+				"items": [
+					"Area_1",
+					"Area_2"
+				],
+				"subfolders": [],
+				"name": "Areas"
+			}
+		]
+	},
+	"eventSheets": {
+		"items": [
+			"eMain",
+			"ePlayer",
+			"eMisc",
+			"eDebug",
+			"eCamera",
+			"eSave&Load",
+			"eTitle"
+		],
+		"subfolders": []
+	},
+	"rootFileFolders": {
+		"script": {
+			"items": [],
+			"subfolders": []
+		},
+		"sound": {
+			"items": [],
+			"subfolders": []
+		},
+		"music": {
+			"items": [],
+			"subfolders": []
+		},
+		"video": {
+			"items": [],
+			"subfolders": []
+		},
+		"font": {
+			"items": [],
+			"subfolders": []
+		},
+		"icon": {
+			"items": [
+				{
+					"name": "loading-logo.png",
+					"type": "image/png",
+					"sid": 643381078364999
+				},
+				{
+					"name": "icon-16.png",
+					"type": "image/png",
+					"sid": 804035618610488
+				},
+				{
+					"name": "icon-32.png",
+					"type": "image/png",
+					"sid": 541796636621185
+				},
+				{
+					"name": "icon-64.png",
+					"type": "image/png",
+					"sid": 375919398552095
+				},
+				{
+					"name": "icon-128.png",
+					"type": "image/png",
+					"sid": 417768910107603
+				},
+				{
+					"name": "icon-256.png",
+					"type": "image/png",
+					"sid": 912907327074514
+				},
+				{
+					"name": "icon-512.png",
+					"type": "image/png",
+					"sid": 558363876021579
+				}
+			],
+			"subfolders": []
+		},
+		"general": {
+			"items": [
+				{
+					"name": "save.json",
+					"type": "application/json",
+					"sid": 213491900058698
+				}
+			],
+			"subfolders": []
+		}
+	},
+	"timelines": {
+		"items": [
+			"CameraAnimation"
+		],
+		"subfolders": [
+			{
+				"items": [],
+				"subfolders": []
+			}
+		]
+	},
+	"properties": {
+		"description": "",
+		"version": "1.0.0.0",
+		"author": "",
+		"authorEmail": "",
+		"authorWebsite": "",
+		"appId": "",
+		"pixelRounding": true,
+		"useLoaderLayout": false,
+		"fullscreenMode": "letterbox-integer-scale",
+		"fullscreenQuality": "low",
+		"viewportFit": "cover",
+		"backgroundColor": [
+			0,
+			0,
+			0,
+			0
+		],
+		"splashColor": [
+			1,
+			1,
+			1,
+			0
+		],
+		"useThemeColor": false,
+		"themeColor": [
+			1,
+			1,
+			1,
+			0
+		],
+		"useHighDpi": true,
+		"orientations": "any",
+		"enableWebGL": true,
+		"gpuPreference": "high-performance",
+		"framerateMode": "vsync",
+		"compositingMode": "standard",
+		"sampling": "nearest",
+		"downscaling": "medium",
+		"maxSpriteSheetSize": 2048,
+		"loaderStyle": "splash",
+		"preloadSounds": true,
+		"clearBackground": true,
+		"enhancedAccelerationPrecision": true
+	},
+	"viewportWidth": 640,
+	"viewportHeight": 360,
+	"firstLayout": "Title Screen"
+}
