@@ -20,6 +20,30 @@
 		{
 			"eventType": "include",
 			"includeSheet": "eSave&Load"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 273457666762643
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 109161413852717,
+					"parameters": {
+						"object-to-create": "camera_player",
+						"layer": "\"Camera\"",
+						"x": "320",
+						"y": "180"
+					}
+				}
+			],
+			"sid": 129989517776512
 		}
 	],
 	"sid": 511506745259763

@@ -183,6 +183,14 @@
 								"object": "Player",
 								"image-point-optional": "0"
 							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "TextDebug",
+							"sid": 764310273784095,
+							"parameters": {
+								"text": "Gamepad.RawAxis(0,0)"
+							}
 						}
 					],
 					"sid": 290220988332335
@@ -221,6 +229,17 @@
 							}
 						},
 						{
+							"id": "compare-axis",
+							"objectClass": "Gamepad",
+							"sid": 410683598605153,
+							"parameters": {
+								"gamepad": "0",
+								"axis": "left-analog-x-axis",
+								"comparison": 4,
+								"value": "25"
+							}
+						},
+						{
 							"id": "is-button-down",
 							"objectClass": "Gamepad",
 							"sid": 561903404984634,
@@ -253,6 +272,17 @@
 							"sid": 296593719650480,
 							"parameters": {
 								"key": 37
+							}
+						},
+						{
+							"id": "compare-axis",
+							"objectClass": "Gamepad",
+							"sid": 914710981020453,
+							"parameters": {
+								"gamepad": "0",
+								"axis": "left-analog-x-axis",
+								"comparison": 2,
+								"value": "-25"
 							}
 						},
 						{
@@ -1111,6 +1141,17 @@
 											}
 										},
 										{
+											"id": "compare-axis",
+											"objectClass": "Gamepad",
+											"sid": 114981839505236,
+											"parameters": {
+												"gamepad": "0",
+												"axis": "left-analog-x-axis",
+												"comparison": 4,
+												"value": "25"
+											}
+										},
+										{
 											"id": "is-button-down",
 											"objectClass": "Gamepad",
 											"sid": 848813950282453,
@@ -1141,6 +1182,17 @@
 											"sid": 811100336109737,
 											"parameters": {
 												"key": 37
+											}
+										},
+										{
+											"id": "compare-axis",
+											"objectClass": "Gamepad",
+											"sid": 742791540429471,
+											"parameters": {
+												"gamepad": "0",
+												"axis": "left-analog-x-axis",
+												"comparison": 2,
+												"value": "-25"
 											}
 										},
 										{
@@ -1177,6 +1229,17 @@
 											}
 										},
 										{
+											"id": "compare-axis",
+											"objectClass": "Gamepad",
+											"sid": 944327961737516,
+											"parameters": {
+												"gamepad": "0",
+												"axis": "left-analog-y-axis",
+												"comparison": 2,
+												"value": "-25"
+											}
+										},
+										{
 											"id": "is-button-down",
 											"objectClass": "Gamepad",
 											"sid": 397425839696689,
@@ -1210,6 +1273,17 @@
 											}
 										},
 										{
+											"id": "compare-axis",
+											"objectClass": "Gamepad",
+											"sid": 738351892217130,
+											"parameters": {
+												"gamepad": "0",
+												"axis": "left-analog-y-axis",
+												"comparison": 4,
+												"value": "25"
+											}
+										},
+										{
 											"id": "is-button-down",
 											"objectClass": "Gamepad",
 											"sid": 966714387379022,
@@ -1234,6 +1308,50 @@
 								{
 									"eventType": "block",
 									"conditions": [
+										{
+											"id": "compare-axis",
+											"objectClass": "Gamepad",
+											"sid": 186670014536514,
+											"parameters": {
+												"gamepad": "0",
+												"axis": "left-analog-x-axis",
+												"comparison": 4,
+												"value": "-25"
+											}
+										},
+										{
+											"id": "compare-axis",
+											"objectClass": "Gamepad",
+											"sid": 960080757580799,
+											"parameters": {
+												"gamepad": "0",
+												"axis": "left-analog-x-axis",
+												"comparison": 2,
+												"value": "25"
+											}
+										},
+										{
+											"id": "compare-axis",
+											"objectClass": "Gamepad",
+											"sid": 477883896890686,
+											"parameters": {
+												"gamepad": "0",
+												"axis": "left-analog-y-axis",
+												"comparison": 2,
+												"value": "25"
+											}
+										},
+										{
+											"id": "compare-axis",
+											"objectClass": "Gamepad",
+											"sid": 635861889621731,
+											"parameters": {
+												"gamepad": "0",
+												"axis": "left-analog-y-axis",
+												"comparison": 4,
+												"value": "-25"
+											}
+										},
 										{
 											"id": "is-button-down",
 											"objectClass": "Gamepad",
@@ -1488,6 +1606,80 @@
 									"eventType": "block",
 									"conditions": [
 										{
+											"id": "compare-axis",
+											"objectClass": "Gamepad",
+											"sid": 470209231033473,
+											"parameters": {
+												"gamepad": "0",
+												"axis": "left-analog-y-axis",
+												"comparison": 2,
+												"value": "-25"
+											}
+										},
+										{
+											"id": "compare-axis",
+											"objectClass": "Gamepad",
+											"sid": 313507004432194,
+											"parameters": {
+												"gamepad": "0",
+												"axis": "left-analog-x-axis",
+												"comparison": 4,
+												"value": "25"
+											}
+										}
+									],
+									"actions": [
+										{
+											"callFunction": "Dash",
+											"sid": 965471452597624,
+											"parameters": [
+												"\"CD\""
+											]
+										}
+									],
+									"sid": 832653403227940
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-axis",
+											"objectClass": "Gamepad",
+											"sid": 215528719284664,
+											"parameters": {
+												"gamepad": "0",
+												"axis": "left-analog-y-axis",
+												"comparison": 2,
+												"value": "-25"
+											}
+										},
+										{
+											"id": "compare-axis",
+											"objectClass": "Gamepad",
+											"sid": 657767806377487,
+											"parameters": {
+												"gamepad": "0",
+												"axis": "left-analog-x-axis",
+												"comparison": 2,
+												"value": "-25"
+											}
+										}
+									],
+									"actions": [
+										{
+											"callFunction": "Dash",
+											"sid": 343042323417854,
+											"parameters": [
+												"\"CE\""
+											]
+										}
+									],
+									"sid": 366915812732376
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
 											"id": "key-is-down",
 											"objectClass": "Keyboard",
 											"sid": 445011456003249,
@@ -1571,7 +1763,7 @@
 									"actions": [
 										{
 											"callFunction": "Dash",
-											"sid": 855426253702053,
+											"sid": 759153013241960,
 											"parameters": [
 												"\"BD\""
 											]
@@ -1611,6 +1803,80 @@
 										}
 									],
 									"sid": 846398934875410
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-axis",
+											"objectClass": "Gamepad",
+											"sid": 737373899854206,
+											"parameters": {
+												"gamepad": "0",
+												"axis": "left-analog-y-axis",
+												"comparison": 4,
+												"value": "25"
+											}
+										},
+										{
+											"id": "compare-axis",
+											"objectClass": "Gamepad",
+											"sid": 601367837992876,
+											"parameters": {
+												"gamepad": "0",
+												"axis": "left-analog-x-axis",
+												"comparison": 4,
+												"value": "25"
+											}
+										}
+									],
+									"actions": [
+										{
+											"callFunction": "Dash",
+											"sid": 726192581328260,
+											"parameters": [
+												"\"BD\""
+											]
+										}
+									],
+									"sid": 431699766438082
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-axis",
+											"objectClass": "Gamepad",
+											"sid": 164044321131332,
+											"parameters": {
+												"gamepad": "0",
+												"axis": "left-analog-y-axis",
+												"comparison": 4,
+												"value": "25"
+											}
+										},
+										{
+											"id": "compare-axis",
+											"objectClass": "Gamepad",
+											"sid": 523718098680461,
+											"parameters": {
+												"gamepad": "0",
+												"axis": "left-analog-x-axis",
+												"comparison": 2,
+												"value": "-25"
+											}
+										}
+									],
+									"actions": [
+										{
+											"callFunction": "Dash",
+											"sid": 128367511273859,
+											"parameters": [
+												"\"BE\""
+											]
+										}
+									],
+									"sid": 600932554618721
 								}
 							],
 							"isOrBlock": true
@@ -1702,6 +1968,17 @@
 							}
 						},
 						{
+							"id": "compare-axis",
+							"objectClass": "Gamepad",
+							"sid": 302206327958103,
+							"parameters": {
+								"gamepad": "0",
+								"axis": "left-analog-x-axis",
+								"comparison": 2,
+								"value": "-25"
+							}
+						},
+						{
 							"id": "is-button-down",
 							"objectClass": "Gamepad",
 							"sid": 616749107057325,
@@ -1733,6 +2010,17 @@
 							"sid": 957775980029762,
 							"parameters": {
 								"key": 39
+							}
+						},
+						{
+							"id": "compare-axis",
+							"objectClass": "Gamepad",
+							"sid": 796638447285135,
+							"parameters": {
+								"gamepad": "0",
+								"axis": "left-analog-x-axis",
+								"comparison": 4,
+								"value": "25"
 							}
 						},
 						{
@@ -2079,17 +2367,6 @@
 							}
 						},
 						{
-							"id": "spawn-another-object",
-							"objectClass": "Player",
-							"sid": 328250846182648,
-							"disabled": true,
-							"parameters": {
-								"object": "Player_Shadow",
-								"layer": "\"Shadow\"",
-								"image-point": "0"
-							}
-						},
-						{
 							"id": "set-boolean-instvar",
 							"objectClass": "Player",
 							"sid": 482961329694424,
@@ -2105,74 +2382,82 @@
 							"eventType": "block",
 							"conditions": [
 								{
-									"id": "every-x-seconds",
-									"objectClass": "System",
-									"sid": 837596838440933,
-									"parameters": {
-										"interval-seconds": "0.02"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "spawn-another-object",
+									"id": "is-enabled",
 									"objectClass": "Player",
-									"sid": 482409163728172,
-									"parameters": {
-										"object": "Player_Shadow",
-										"layer": "\"Shadow\"",
-										"image-point": "0"
-									}
+									"sid": 493031234435273,
+									"behaviorType": "Platform",
+									"isInverted": true
 								}
 							],
-							"sid": 348046111469916
-						},
-						{
-							"eventType": "block",
-							"conditions": [
+							"actions": [],
+							"sid": 146388746707719,
+							"children": [
 								{
-									"id": "trigger-once-while-true",
-									"objectClass": "System",
-									"sid": 562678324305201
-								}
-							],
-							"actions": [
-								{
-									"id": "create-object",
-									"objectClass": "System",
-									"sid": 973462530848935,
-									"parameters": {
-										"object-to-create": "Ripple_Effect",
-										"layer": "\"Ripple\"",
-										"x": "Player.X",
-										"y": "Player.Y"
-									}
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "trigger-once-while-true",
+											"objectClass": "System",
+											"sid": 169436010496716
+										}
+									],
+									"actions": [
+										{
+											"callFunction": "CameraShake",
+											"sid": 451542228771215
+										},
+										{
+											"id": "gamepad-vibrate",
+											"objectClass": "Gamepad",
+											"sid": 197837580305888,
+											"parameters": {
+												"gamepad": "0",
+												"duration": "200",
+												"weak-magnitude": "80",
+												"strong-magnitude": "80"
+											}
+										},
+										{
+											"id": "create-object",
+											"objectClass": "System",
+											"sid": 787277635227394,
+											"parameters": {
+												"object-to-create": "Ripple_Effect",
+												"layer": "\"Ripple\"",
+												"x": "Player.X",
+												"y": "Player.Y"
+											}
+										}
+									],
+									"sid": 259013199629206
 								},
 								{
-									"id": "shake",
-									"objectClass": "camera_player",
-									"sid": 759695523953844,
-									"disabled": true,
-									"behaviorType": "ScrollTo",
-									"parameters": {
-										"magnitude": "6",
-										"duration": "0.3",
-										"mode": "reducing-magnitude"
-									}
-								},
-								{
-									"id": "gamepad-vibrate",
-									"objectClass": "Gamepad",
-									"sid": 173862956054512,
-									"parameters": {
-										"gamepad": "0",
-										"duration": "200",
-										"weak-magnitude": "80",
-										"strong-magnitude": "80"
-									}
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "every-x-seconds",
+											"objectClass": "System",
+											"sid": 445448099791177,
+											"parameters": {
+												"interval-seconds": "0.01"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "spawn-another-object",
+											"objectClass": "Player",
+											"sid": 549132085145318,
+											"parameters": {
+												"object": "Player_Shadow",
+												"layer": "\"Shadow\"",
+												"image-point": "0"
+											}
+										}
+									],
+									"sid": 671409747095241
 								}
-							],
-							"sid": 592947772862561
+							]
 						}
 					]
 				},
@@ -2197,8 +2482,13 @@
 					],
 					"actions": [
 						{
-							"callFunction": "Dash_End",
-							"sid": 501176856665310
+							"id": "set-instvar-value",
+							"objectClass": "Player",
+							"sid": 702810448760542,
+							"parameters": {
+								"instance-variable": "dash_time",
+								"value": "0"
+							}
 						}
 					],
 					"sid": 325071162108566
@@ -2300,17 +2590,19 @@
 					],
 					"actions": [
 						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 130871082554579,
-							"parameters": {
-								"seconds": "0.2"
-							}
-						},
-						{
-							"id": "destroy",
+							"id": "tween-two-properties",
 							"objectClass": "Ripple_Effect",
-							"sid": 957610784856650
+							"sid": 412863909927189,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"\"",
+								"property": "size",
+								"end-x": "150",
+								"end-y": "150",
+								"time": "0.35",
+								"ease": "default",
+								"destroy-on-complete": "no"
+							}
 						}
 					],
 					"sid": 402434994253422
@@ -2319,124 +2611,74 @@
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "is-boolean-instance-variable-set",
-							"objectClass": "Player",
-							"sid": 191635323085729,
+							"id": "on-tweens-finished",
+							"objectClass": "camera_player",
+							"sid": 124672777197059,
+							"behaviorType": "Tween",
 							"parameters": {
-								"instance-variable": "canDash"
-							},
-							"isInverted": true
+								"tags": "\"Camera Shake\""
+							}
 						}
 					],
-					"actions": [],
-					"sid": 970387578742575,
-					"children": [
+					"actions": [
 						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "is-by-wall",
-									"objectClass": "Player",
-									"sid": 627752547850194,
-									"behaviorType": "PlatformDash",
-									"parameters": {
-										"side": "left"
-									}
-								},
-								{
-									"id": "is-by-wall",
-									"objectClass": "Player",
-									"sid": 159428291059632,
-									"behaviorType": "PlatformDash",
-									"parameters": {
-										"side": "right"
-									}
-								}
-							],
-							"actions": [
-								{
-									"callFunction": "Dash_End",
-									"sid": 121522661196087
-								}
-							],
-							"sid": 905416430322253,
-							"isOrBlock": true
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "is-on-floor",
-									"objectClass": "Player",
-									"sid": 892868539484243,
-									"behaviorType": "Platform",
-									"isInverted": true
-								}
-							],
-							"actions": [],
-							"sid": 708888894103867,
-							"children": [
-								{
-									"eventType": "block",
-									"conditions": [
-										{
-											"id": "on-collision-with-another-object",
-											"objectClass": "Player",
-											"sid": 384682556158976,
-											"parameters": {
-												"object": "black_ground"
-											}
-										},
-										{
-											"id": "compare-opacity",
-											"objectClass": "black_ground",
-											"sid": 504544907345315,
-											"parameters": {
-												"comparison": 0,
-												"opacity": "100"
-											}
-										}
-									],
-									"actions": [
-										{
-											"callFunction": "Dash_End",
-											"sid": 786064762495111
-										}
-									],
-									"sid": 826811617461008
-								},
-								{
-									"eventType": "block",
-									"conditions": [
-										{
-											"id": "on-collision-with-another-object",
-											"objectClass": "Player",
-											"sid": 761912937371691,
-											"parameters": {
-												"object": "light_ground"
-											}
-										},
-										{
-											"id": "compare-opacity",
-											"objectClass": "light_ground",
-											"sid": 661840781188318,
-											"parameters": {
-												"comparison": 0,
-												"opacity": "100"
-											}
-										}
-									],
-									"actions": [
-										{
-											"callFunction": "Dash_End",
-											"sid": 859520529273810
-										}
-									],
-									"sid": 130935447150902
-								}
-							]
+							"id": "set-position",
+							"objectClass": "camera_player",
+							"sid": 436005860505327,
+							"parameters": {
+								"x": "camera_player.start_posX",
+								"y": "camera_player.start_posY"
+							}
 						}
-					]
+					],
+					"sid": 324628834344357
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-hit-solid",
+							"objectClass": "Player",
+							"sid": 230543186846724,
+							"behaviorType": "MoveTo"
+						}
+					],
+					"actions": [
+						{
+							"id": "set-enabled",
+							"objectClass": "Player",
+							"sid": 766112806500192,
+							"behaviorType": "Platform",
+							"parameters": {
+								"state": "enabled"
+							}
+						}
+					],
+					"sid": 479652128196726
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-arrived",
+							"objectClass": "Player",
+							"sid": 707319945360019,
+							"behaviorType": "MoveTo"
+						}
+					],
+					"actions": [
+						{
+							"id": "set-enabled",
+							"objectClass": "Player",
+							"sid": 883026774142510,
+							"behaviorType": "Platform",
+							"parameters": {
+								"state": "enabled"
+							}
+						}
+					],
+					"sid": 131512503699200,
+					"isOrBlock": true
 				}
 			],
 			"sid": 180383317141602,
@@ -2479,48 +2721,39 @@
 					"conditions": [],
 					"actions": [
 						{
+							"id": "set-instvar-value",
+							"objectClass": "Player",
+							"sid": 326648421020731,
+							"parameters": {
+								"instance-variable": "dash_time",
+								"value": "0.3"
+							}
+						},
+						{
+							"id": "set-vector-y",
+							"objectClass": "Player",
+							"sid": 644249417637835,
+							"behaviorType": "Platform",
+							"parameters": {
+								"vector-y": "0"
+							}
+						},
+						{
+							"id": "set-vector-x",
+							"objectClass": "Player",
+							"sid": 562802629376217,
+							"behaviorType": "Platform",
+							"parameters": {
+								"vector-x": "0"
+							}
+						},
+						{
 							"id": "set-enabled",
 							"objectClass": "Player",
 							"sid": 338639232903593,
 							"behaviorType": "Platform",
 							"parameters": {
 								"state": "disabled"
-							}
-						},
-						{
-							"id": "set-enabled",
-							"objectClass": "Player",
-							"sid": 926641004927416,
-							"behaviorType": "PlatformDash",
-							"parameters": {
-								"state": "enabled"
-							}
-						},
-						{
-							"id": "set-enabled",
-							"objectClass": "Player",
-							"sid": 204378093877591,
-							"behaviorType": "8Direction",
-							"parameters": {
-								"state": "enabled"
-							}
-						},
-						{
-							"id": "set-instvar-value",
-							"objectClass": "Player",
-							"sid": 535578655327432,
-							"parameters": {
-								"instance-variable": "dash_time",
-								"value": "0.2"
-							}
-						},
-						{
-							"id": "set-ignoring-input",
-							"objectClass": "Player",
-							"sid": 769552011595413,
-							"behaviorType": "8Direction",
-							"parameters": {
-								"input": "start-ignoring"
 							}
 						}
 					],
@@ -2542,12 +2775,14 @@
 							],
 							"actions": [
 								{
-									"id": "set-vector-x",
+									"id": "move-to-position",
 									"objectClass": "Player",
-									"sid": 699897489764299,
-									"behaviorType": "8Direction",
+									"sid": 592281549632117,
+									"behaviorType": "MoveTo",
 									"parameters": {
-										"vector-x": "700"
+										"x": "Self.X+100",
+										"y": "Self.Y",
+										"mode": "direct"
 									}
 								}
 							],
@@ -2569,12 +2804,14 @@
 							],
 							"actions": [
 								{
-									"id": "set-vector-x",
+									"id": "move-to-position",
 									"objectClass": "Player",
-									"sid": 880283359622042,
-									"behaviorType": "8Direction",
+									"sid": 348531926475882,
+									"behaviorType": "MoveTo",
 									"parameters": {
-										"vector-x": "-700"
+										"x": "Self.X-100",
+										"y": "Self.Y",
+										"mode": "direct"
 									}
 								}
 							],
@@ -2596,12 +2833,14 @@
 							],
 							"actions": [
 								{
-									"id": "set-vector-y",
+									"id": "move-to-position",
 									"objectClass": "Player",
-									"sid": 179930752295048,
-									"behaviorType": "8Direction",
+									"sid": 193750520000894,
+									"behaviorType": "MoveTo",
 									"parameters": {
-										"vector-y": "-500"
+										"x": "Self.X",
+										"y": "Self.Y-100",
+										"mode": "direct"
 									}
 								}
 							],
@@ -2623,12 +2862,14 @@
 							],
 							"actions": [
 								{
-									"id": "set-vector-y",
+									"id": "move-to-position",
 									"objectClass": "Player",
-									"sid": 196816170132906,
-									"behaviorType": "8Direction",
+									"sid": 695295579662479,
+									"behaviorType": "MoveTo",
 									"parameters": {
-										"vector-y": "1000"
+										"x": "Self.X",
+										"y": "Self.Y+100",
+										"mode": "direct"
 									}
 								}
 							],
@@ -2650,21 +2891,14 @@
 							],
 							"actions": [
 								{
-									"id": "set-vector-y",
+									"id": "move-to-position",
 									"objectClass": "Player",
-									"sid": 749743119510856,
-									"behaviorType": "8Direction",
+									"sid": 780528535316206,
+									"behaviorType": "MoveTo",
 									"parameters": {
-										"vector-y": "-300"
-									}
-								},
-								{
-									"id": "set-vector-x",
-									"objectClass": "Player",
-									"sid": 448569850795522,
-									"behaviorType": "8Direction",
-									"parameters": {
-										"vector-x": "500"
+										"x": "Self.X+100",
+										"y": "Self.Y-100",
+										"mode": "direct"
 									}
 								}
 							],
@@ -2686,21 +2920,14 @@
 							],
 							"actions": [
 								{
-									"id": "set-vector-y",
+									"id": "move-to-position",
 									"objectClass": "Player",
-									"sid": 896113954677818,
-									"behaviorType": "8Direction",
+									"sid": 978379376121219,
+									"behaviorType": "MoveTo",
 									"parameters": {
-										"vector-y": "-300"
-									}
-								},
-								{
-									"id": "set-vector-x",
-									"objectClass": "Player",
-									"sid": 465783335959741,
-									"behaviorType": "8Direction",
-									"parameters": {
-										"vector-x": "-500"
+										"x": "Self.X-100",
+										"y": "Self.Y-100",
+										"mode": "direct"
 									}
 								}
 							],
@@ -2722,21 +2949,14 @@
 							],
 							"actions": [
 								{
-									"id": "set-vector-y",
+									"id": "move-to-position",
 									"objectClass": "Player",
-									"sid": 132080553637084,
-									"behaviorType": "8Direction",
+									"sid": 946495806205940,
+									"behaviorType": "MoveTo",
 									"parameters": {
-										"vector-y": "300"
-									}
-								},
-								{
-									"id": "set-vector-x",
-									"objectClass": "Player",
-									"sid": 660333362610755,
-									"behaviorType": "8Direction",
-									"parameters": {
-										"vector-x": "500"
+										"x": "Self.X+100",
+										"y": "Self.Y+100",
+										"mode": "direct"
 									}
 								}
 							],
@@ -2758,94 +2978,20 @@
 							],
 							"actions": [
 								{
-									"id": "set-vector-y",
+									"id": "move-to-position",
 									"objectClass": "Player",
-									"sid": 190758935900236,
-									"behaviorType": "8Direction",
+									"sid": 214640121036419,
+									"behaviorType": "MoveTo",
 									"parameters": {
-										"vector-y": "300"
-									}
-								},
-								{
-									"id": "set-vector-x",
-									"objectClass": "Player",
-									"sid": 344830125887211,
-									"behaviorType": "8Direction",
-									"parameters": {
-										"vector-x": "-500"
+										"x": "Self.X-100",
+										"y": "Self.Y+100",
+										"mode": "direct"
 									}
 								}
 							],
 							"sid": 604752601616176
 						}
 					]
-				},
-				{
-					"functionName": "Dash_End",
-					"functionDescription": "",
-					"functionCategory": "",
-					"functionReturnType": "none",
-					"functionIsAsync": false,
-					"functionParameters": [],
-					"eventType": "function-block",
-					"conditions": [],
-					"actions": [
-						{
-							"id": "set-vector-x",
-							"objectClass": "Player",
-							"sid": 633109240246384,
-							"behaviorType": "8Direction",
-							"parameters": {
-								"vector-x": "0"
-							}
-						},
-						{
-							"id": "set-vector-y",
-							"objectClass": "Player",
-							"sid": 981917517152026,
-							"behaviorType": "8Direction",
-							"parameters": {
-								"vector-y": "0"
-							}
-						},
-						{
-							"id": "set-enabled",
-							"objectClass": "Player",
-							"sid": 635090025142728,
-							"behaviorType": "8Direction",
-							"parameters": {
-								"state": "disabled"
-							}
-						},
-						{
-							"id": "set-enabled",
-							"objectClass": "Player",
-							"sid": 937708884110517,
-							"behaviorType": "PlatformDash",
-							"parameters": {
-								"state": "disabled"
-							}
-						},
-						{
-							"id": "set-enabled",
-							"objectClass": "Player",
-							"sid": 446427110634418,
-							"behaviorType": "Platform",
-							"parameters": {
-								"state": "enabled"
-							}
-						},
-						{
-							"id": "set-instvar-value",
-							"objectClass": "Player",
-							"sid": 702810448760542,
-							"parameters": {
-								"instance-variable": "dash_time",
-								"value": "0"
-							}
-						}
-					],
-					"sid": 299562997335134
 				},
 				{
 					"functionName": "Death",
@@ -2856,76 +3002,154 @@
 					"functionParameters": [],
 					"eventType": "function-block",
 					"conditions": [],
+					"actions": [],
+					"sid": 653536001314260,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 822583843152617
+								}
+							],
+							"actions": [
+								{
+									"id": "set-visible",
+									"objectClass": "Player_Anim",
+									"sid": 710539551947214,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-group-active",
+									"objectClass": "System",
+									"sid": 223968594984797,
+									"parameters": {
+										"group-name": "\"Input & Mecanicas\"",
+										"state": "deactivated"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 309884283543965,
+									"parameters": {
+										"seconds": "1"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "Player",
+									"sid": 760447481980324,
+									"parameters": {
+										"instance-variable": "estado_forma",
+										"value": "Player.estado_checkpoint"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 478147073193738,
+									"parameters": {
+										"seconds": "0"
+									}
+								},
+								{
+									"id": "set-position",
+									"objectClass": "Player",
+									"sid": 361803453818372,
+									"parameters": {
+										"x": "Player.checkpoint_x",
+										"y": "Player.checkpoint_y"
+									}
+								},
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "Player",
+									"sid": 611738090040403,
+									"parameters": {
+										"instance-variable": "dead",
+										"value": "false"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Player_Anim",
+									"sid": 486466945604647,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 641599742065304,
+									"parameters": {
+										"seconds": "0.2"
+									}
+								},
+								{
+									"id": "set-group-active",
+									"objectClass": "System",
+									"sid": 640191828367211,
+									"parameters": {
+										"group-name": "\"Input & Mecanicas\"",
+										"state": "activated"
+									}
+								}
+							],
+							"sid": 111981423190875
+						}
+					]
+				},
+				{
+					"functionName": "CameraShake",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
 					"actions": [
 						{
-							"id": "destroy",
-							"objectClass": "Player_Anim",
-							"sid": 928606719930061
+							"id": "set-instvar-value",
+							"objectClass": "camera_player",
+							"sid": 483506954069780,
+							"parameters": {
+								"instance-variable": "start_posX",
+								"value": "camera_player.X"
+							}
 						},
 						{
 							"id": "set-instvar-value",
-							"objectClass": "Player",
-							"sid": 642509948194972,
+							"objectClass": "camera_player",
+							"sid": 248474807237193,
 							"parameters": {
-								"instance-variable": "estado_forma",
-								"value": "Player.estado_checkpoint"
+								"instance-variable": "start_posY",
+								"value": "camera_player.Y"
 							}
 						},
 						{
-							"id": "set-group-active",
-							"objectClass": "System",
-							"sid": 920509172090159,
+							"id": "tween-two-properties",
+							"objectClass": "camera_player",
+							"sid": 941534151955713,
+							"behaviorType": "Tween",
 							"parameters": {
-								"group-name": "\"Input & Mecanicas\"",
-								"state": "deactivated"
-							}
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 103408487717594,
-							"parameters": {
-								"seconds": "0.5"
-							}
-						},
-						{
-							"id": "set-position",
-							"objectClass": "Player",
-							"sid": 281892962010113,
-							"parameters": {
-								"x": "Player.checkpoint_x",
-								"y": "Player.checkpoint_y"
-							}
-						},
-						{
-							"id": "spawn-another-object",
-							"objectClass": "Player",
-							"sid": 852926805849118,
-							"parameters": {
-								"object": "Player_Anim",
-								"layer": "\"Game\"",
-								"image-point": "0"
-							}
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 794407709803042,
-							"parameters": {
-								"seconds": "0.4"
-							}
-						},
-						{
-							"id": "set-group-active",
-							"objectClass": "System",
-							"sid": 331748054087206,
-							"parameters": {
-								"group-name": "\"Input & Mecanicas\"",
-								"state": "activated"
+								"tags": "\"\"",
+								"property": "position",
+								"end-x": "choose(camera_player.X - 8, camera_player.X + 8)",
+								"end-y": "choose(camera_player.Y - 8, camera_player.Y + 8)",
+								"time": "0.001",
+								"ease": "default",
+								"destroy-on-complete": "no"
 							}
 						}
 					],
-					"sid": 653536001314260
+					"sid": 501059379529490
 				}
 			],
 			"sid": 493198618608372,
@@ -2953,9 +3177,9 @@
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "on-collision-with-another-object",
+							"id": "is-overlapping-another-object",
 							"objectClass": "Player",
-							"sid": 369114094315052,
+							"sid": 265920134629477,
 							"parameters": {
 								"object": "dark_traps"
 							}
@@ -2973,8 +3197,13 @@
 					],
 					"actions": [
 						{
-							"callFunction": "Death",
-							"sid": 988092296710918
+							"id": "set-boolean-instvar",
+							"objectClass": "Player",
+							"sid": 599934953207712,
+							"parameters": {
+								"instance-variable": "dead",
+								"value": "true"
+							}
 						}
 					],
 					"sid": 425149187521912
@@ -2993,12 +3222,37 @@
 					],
 					"actions": [
 						{
-							"callFunction": "Death",
-							"sid": 766665220945031
+							"id": "set-boolean-instvar",
+							"objectClass": "Player",
+							"sid": 391750732221937,
+							"parameters": {
+								"instance-variable": "dead",
+								"value": "true"
+							}
 						}
 					],
 					"sid": 667828069000000,
 					"isOrBlock": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "Player",
+							"sid": 265312661080014,
+							"parameters": {
+								"instance-variable": "dead"
+							}
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "Death",
+							"sid": 995647436618712
+						}
+					],
+					"sid": 773218557590807
 				}
 			],
 			"sid": 942802028604873,

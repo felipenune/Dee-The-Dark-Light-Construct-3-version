@@ -6,7 +6,7 @@
 			"overriden": 0,
 			"instances": [
 				{
-					"type": "Text",
+					"type": "Levelteste",
 					"properties": {
 						"text": "welcome to hell!",
 						"enable-bbcode": true,
@@ -562,54 +562,7 @@
 		{
 			"name": "Game",
 			"overriden": 0,
-			"instances": [
-				{
-					"type": "camera_player",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 26,
-					"instanceVariables": {},
-					"behaviors": {
-						"ScrollTo": {
-							"properties": {
-								"enabled": true
-							}
-						},
-						"MoveTo": {
-							"properties": {
-								"max-speed": 200,
-								"acceleration": 600,
-								"deceleration": 600,
-								"rotate-speed": 0,
-								"set-angle": true,
-								"stop-on-solids": false,
-								"enabled": true
-							}
-						}
-					},
-					"world": {
-						"x": 320,
-						"y": 180,
-						"width": 56.20333677321349,
-						"height": 56.20333677321349,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				}
-			],
+			"instances": [],
 			"sid": 713406890990498,
 			"effectTypes": [],
 			"isInitiallyVisible": true,

@@ -390,52 +390,6 @@
 			"overriden": 0,
 			"instances": [
 				{
-					"type": "camera_player",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 46,
-					"instanceVariables": {},
-					"behaviors": {
-						"ScrollTo": {
-							"properties": {
-								"enabled": true
-							}
-						},
-						"MoveTo": {
-							"properties": {
-								"max-speed": 200,
-								"acceleration": 600,
-								"deceleration": 600,
-								"rotate-speed": 0,
-								"set-angle": true,
-								"stop-on-solids": false,
-								"enabled": true
-							}
-						}
-					},
-					"world": {
-						"x": 320,
-						"y": 150,
-						"width": 56.20333677321349,
-						"height": 56.20333677321349,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "camera_zone",
 					"properties": {
 						"initially-visible": false,
@@ -450,8 +404,8 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 320,
-						"y": 180,
+						"x": 321,
+						"y": 173,
 						"width": 640,
 						"height": 360,
 						"originX": 0.5,

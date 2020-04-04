@@ -69,6 +69,12 @@
 			"type": "boolean",
 			"desc": "",
 			"sid": 483701279218457
+		},
+		{
+			"name": "dead",
+			"type": "boolean",
+			"desc": "",
+			"sid": 665511467712336
 		}
 	],
 	"behaviorTypes": [
@@ -78,19 +84,9 @@
 			"sid": 303081818928142
 		},
 		{
-			"behaviorId": "scrollto",
-			"name": "ScrollTo",
-			"sid": 276091138393331
-		},
-		{
-			"behaviorId": "EightDir",
-			"name": "8Direction",
-			"sid": 608270899951298
-		},
-		{
-			"behaviorId": "Platform",
-			"name": "PlatformDash",
-			"sid": 900148854357760
+			"behaviorId": "MoveTo",
+			"name": "MoveTo",
+			"sid": 157975734847958
 		}
 	],
 	"effectTypes": [],

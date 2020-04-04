@@ -55,7 +55,8 @@
 						"checkpoint_x": 0,
 						"checkpoint_y": 0,
 						"estado_checkpoint": "",
-						"shadow": false
+						"shadow": false,
+						"dead": false
 					},
 					"behaviors": {
 						"Platform": {
@@ -72,34 +73,15 @@
 								"enabled": true
 							}
 						},
-						"ScrollTo": {
+						"MoveTo": {
 							"properties": {
-								"enabled": false
-							}
-						},
-						"8Direction": {
-							"properties": {
-								"max-speed": 4000,
-								"acceleration": 4000,
-								"deceleration": 0,
-								"directions": "dir-8",
-								"set-angle": "no",
-								"default-controls": true,
-								"enabled": true
-							}
-						},
-						"PlatformDash": {
-							"properties": {
-								"max-speed": 0,
+								"max-speed": 500,
 								"acceleration": 0,
 								"deceleration": 0,
-								"jump-strength": 0,
-								"gravity": 0,
-								"max-fall-speed": 0,
-								"double-jump": false,
-								"jump-sustain": 0,
-								"default-controls": false,
-								"enabled": false
+								"rotate-speed": 0,
+								"set-angle": false,
+								"stop-on-solids": true,
+								"enabled": true
 							}
 						}
 					},
@@ -176,6 +158,16 @@
 							"properties": {
 								"enabled": true
 							}
+						},
+						"Fade": {
+							"properties": {
+								"fade-in-time": 0,
+								"wait-time": 0,
+								"fade-out-time": 0.35,
+								"destroy": true,
+								"enabled": true,
+								"live-preview": false
+							}
 						}
 					},
 					"effects": {
@@ -191,10 +183,53 @@
 						}
 					},
 					"world": {
-						"x": 453,
-						"y": 105,
-						"width": 327.75008220561756,
-						"height": 187.30479282594746,
+						"x": 499,
+						"y": 121,
+						"width": 10,
+						"height": 10,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "camera_player",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 17,
+					"instanceVariables": {
+						"start_posX": 0,
+						"start_posY": 0
+					},
+					"behaviors": {
+						"ScrollTo": {
+							"properties": {
+								"enabled": true
+							}
+						},
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 320,
+						"y": 180,
+						"width": 56.20333677321349,
+						"height": 56.20333677321349,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [

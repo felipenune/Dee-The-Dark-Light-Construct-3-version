@@ -3,7 +3,20 @@
 	"plugin-id": "Sprite",
 	"sid": 860404641233478,
 	"isGlobal": false,
-	"instanceVariables": [],
+	"instanceVariables": [
+		{
+			"name": "start_posX",
+			"type": "number",
+			"desc": "",
+			"sid": 687368055859551
+		},
+		{
+			"name": "start_posY",
+			"type": "number",
+			"desc": "",
+			"sid": 472309818907204
+		}
+	],
 	"behaviorTypes": [
 		{
 			"behaviorId": "scrollto",
@@ -11,9 +24,9 @@
 			"sid": 839551064253369
 		},
 		{
-			"behaviorId": "MoveTo",
-			"name": "MoveTo",
-			"sid": 363627825693780
+			"behaviorId": "Tween",
+			"name": "Tween",
+			"sid": 132498196155533
 		}
 	],
 	"effectTypes": [],

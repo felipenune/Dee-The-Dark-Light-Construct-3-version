@@ -32,6 +32,14 @@
 		},
 		{
 			"type": "plugin",
+			"id": "Timeline",
+			"name": "Timeline",
+			"author": "Scirra",
+			"version": "r189.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Particles",
 			"name": "Particles",
 			"author": "Scirra",
@@ -104,16 +112,8 @@
 		},
 		{
 			"type": "behavior",
-			"id": "scrollto",
-			"name": "Scroll To",
-			"author": "Scirra",
-			"version": "r189.2",
-			"bundled": false
-		},
-		{
-			"type": "behavior",
-			"id": "EightDir",
-			"name": "8 Direction",
+			"id": "MoveTo",
+			"name": "Move To",
 			"author": "Scirra",
 			"version": "r189.2",
 			"bundled": false
@@ -160,8 +160,8 @@
 		},
 		{
 			"type": "behavior",
-			"id": "MoveTo",
-			"name": "Move To",
+			"id": "scrollto",
+			"name": "Scroll To",
 			"author": "Scirra",
 			"version": "r189.2",
 			"bundled": false
@@ -194,7 +194,8 @@
 	"uniqueId": "ggt990r15v4",
 	"objectTypes": {
 		"items": [
-			"Soul"
+			"Soul",
+			"TextDebug"
 		],
 		"subfolders": [
 			{
@@ -209,7 +210,8 @@
 			{
 				"items": [
 					"AJAX",
-					"LocalStorage"
+					"LocalStorage",
+					"Timeline"
 				],
 				"subfolders": [],
 				"name": "System"
@@ -230,7 +232,7 @@
 			{
 				"items": [
 					"black_ground",
-					"Text",
+					"Levelteste",
 					"water",
 					"water2",
 					"light_ground"
@@ -411,9 +413,7 @@
 		}
 	},
 	"timelines": {
-		"items": [
-			"CameraAnimation"
-		],
+		"items": [],
 		"subfolders": [
 			{
 				"items": [],
